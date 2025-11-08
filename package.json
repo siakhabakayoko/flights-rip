@@ -10,6 +10,7 @@
     "concurrently": "^5.2.0"
   },
   "scripts": {
-    "dev": "concurrently \"cd backend && yarn install && yarn dev\" \"cd frontend && yarn install && yarn dev\""
+    "dev": "concurrently \"cd backend && npm install && npm run dev\" \"cd frontend && npm install && npm run dev\"",
+    "build": "concurrently \"cd backend && npm install\" \"cd frontend && npm install && npm run build\""
   }
 }

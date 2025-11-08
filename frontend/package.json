@@ -2,13 +2,13 @@
   "name": "flights-rip",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "next start -p 3001"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
     "antd": "^4.2.3",
     "axios": "^0.19.2",
     "moment": "^2.25.3",
